@@ -1,0 +1,128 @@
+<!--declara que o documento está em html 5-->
+
+<!DOCTYPE html>
+
+<!--declara a linguagem de país usado-->
+<html lang="en">
+
+<head>
+    <!--chamando o css pra dentro do html-->
+    <link rel="stylesheet" href="olimpiadas.css">
+
+
+    <!-- permite o código suportar caracteres especiais -->
+    <meta charset="UTF-8">
+
+    <!--ajusta a visualização pra dispositivos moveis-->
+    <meta name="viewport" 
+    content="width=device-width, initial-scale=1.0">
+
+    <!--é o titulo da aba da pagina web-->
+    <title>trabalho das olimpiadas</title>
+</head>
+
+<!--corpo da pagina-->
+<body>
+    
+    <!--header é usado para deixar tudo dentro dele como cabeçalho da pagina-->
+    <header>
+
+        <!--tag H1 é usada como titulo da pagina (é a maior letra dentro das tag H)-->
+        <h1>
+            atletas do brasil
+        </h1>
+    </header>
+
+    <!--main é usado para dizer que tudo dentro dele é o conteudo principal da pagina-->
+    <main>
+
+        <!--usado para criar uma area dentro do conteudo principal, que aqui será a area de pesquisa (obs: essa não só armazena um espaço que será usado para algo, mas não aparece nada na tela quando criamos, apenas se colocarmos algo dentro)-->
+        <section>
+
+            <!-- <input type="text"> = cria um campo para o usuario digitar-->
+
+            <!-- placeholder="" = deixa uma mensagem dentro do campo de digitação do usuario (usado para deixar uma informação do que fazer), o placeholder tem que ficar dentro da tag input type para funcionar -->
+             <input type="text"
+             placeholder="digite o nome do atleta" id="campo-pesquisa">
+             <br>
+
+            <!--usado para criar um botão-->
+            <!--a função onclick"pesquisar(): dá ao botão uma função a fazer quando clicado""-->
+             <button onclick="pesquisar()">pesquisar</button>
+            
+        </section>
+
+        <section class="resultados-pesquisa" id="resultados-pesquisa"></section>
+
+        <!--Cria uma nova seção com a classe resultados-pesquisa, que será usada para estilização no CSS.-->
+
+    <section class="resultados-pesquisa">
+        <!--
+
+        <div class="item resultado">
+
+            <h2>
+                <a href="#" target="_blank">Rebeca Andrade</a>
+            </h2>
+
+            <p class="descrição-meta"> rebeca andrade é icone do esporte nacional.
+            </p>
+
+            
+            <a href="https://ge.globo.com/pb/olimpiadas/noticia/2024/09/22/rebeca-andrade-brilha-nas-barras-assimetricas-e-conquista-titulo-no-brasileiro-de-ginastica-artistica.ghtml" target="_blank">mais informações</a>
+
+        </div>
+
+        <div class="item resultado">
+
+            <h2>
+                <a href="#" target="_blank">Neymar</a>
+            </h2>
+
+            <p class="descrição-meta">quando Neymar voltará?</p>
+
+            <a href="https://www.mixvale.com.br/2024/09/21/quando-neymar-voltara-a-campo-retorno-do-craque-no-horizonte-do-al-hilal/" target="_blank">mais informações</a>
+
+        </div>
+
+        <div class="item resultado">
+            <h2>
+                <a href="#" target="_blank">vinicius junior</a>
+            </h2>
+            <p class="descrição-meta">principal candidato a bola de ouro</p>
+            <a href="https://ge.globo.com/futebol/futebol-internacional/noticia/2024/09/04/bola-de-ouro-2024-veja-indicados-e-data-da-premiacao.ghtml" target="_blank"> mais informações </a>
+        </div>
+    -->
+
+    </section>
+
+
+</main>
+
+    <!--tag footer identifica que tudo dentro dela é o rodapé do corpo-->
+    <footer>
+<hr>
+        <!--tag HR=CRIAR UMA LINHA DE DIVISÃO
+
+        tag BR= QUEBRAR LINHA
+
+        tag P= CRIAR PARÁGRAFOS E ESCREVER-->
+
+        <br>
+        <p>
+            <b>- Atletas do brasil. todos os direitos reservados.</b>
+            
+        </p>
+        <p>
+            <b>- Entre em contato pelo email: chinelo@atletas.com.br</b>
+        </p>
+    </footer>
+
+    <!--adiciona o java script no html-->
+    
+    <script src="dados.js"></script>
+    <script src="app.js"></script>
+
+
+</body>
+</html>

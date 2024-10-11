@@ -1,0 +1,154 @@
+
+/*estilizei o corpo da página*/
+body{
+    font-family: Arial, Helvetica, sans-serif; /*define a fonte que deseja usar*/
+
+    background-color: rgb(90, 90, 90); /*é a cor do plano de fundo*/
+
+    display: flex; /* display: flex; = permite começar a mexer no layout tipo centralizar alinhar, essas coisas*/
+
+    flex-direction: column; /*alinhar os itens a vertical*/
+
+    align-items: center; /*centraliza os itens na horizontal*/
+
+    justify-content: center; /*centraliza os itens na vertical*/
+
+    height: 100%; /*preenche a altura total da tela web*/
+
+    
+    margin: 2.5%;/*É O ESPAÇO ENTRE UM CONTEUDO E OUTROS OU ATE MESMO DE UMA PAREDE DO SITE (PODEMOS USAR O MARGIN PARA DISTÂNCIAR USANDO MARGIN - TOP OU QUALQUER LADO EM INGLÊS)
+    */
+    padding: 0%; /*A QTE DE ESPAÇO ENTRE A BORDA E CONTEUDO
+    */
+}
+
+        /*estiliza tudo dentro do H1 lá do html*/
+    h1{
+    font-size: 2.5rem; /*altera o tamanho da fonte*/
+
+    color: rgb(50, 60, 66); /*define cor da fonte*/
+
+
+    text-align: center; /*Alinha o texto (quando estiver digitando haverá as opção de centralizar ou fazer outra coisa)*/
+
+    letter-spacing: 0.4rem;/*altera o tamanho de espaçamento entre as letras*/
+    
+}
+
+/*estiliza a parte guardada para o usuario digitar algo*/
+section{
+    display: flex;
+    flex-direction: column;/*alinha os itens na vertical*/
+    align-items: center;/*alinhou ao centro o botão pesquisar*/
+    margin-bottom: 0.5rem; /*espaçamento abaixo de cada seção*/
+}
+
+ /*estiliza a caixa de texto dentro da seção*/
+section input{
+
+    width: 30rem; /*aumentei a largura da caixa de texto*/
+
+    border: none; /*remove a borda padrão que vem na caixa de texto*/
+
+    padding: 1rem; /*espaçamento do texto para as bordas*/
+
+    border-radius: 1.5rem; /* arredonda a borda*/
+
+    margin-bottom: 1rem; /*margem entre a caixa de texto e o botão aumentada*/
+
+    font-size: 1rem; /*aumentei o tamanho da fonte*/
+
+    box-sizing: border-box; /*deixou a caixa de texto com a mesma largura do titulo h1*/
+
+}
+
+/*estiliza o botão dentro da seção*/
+section button {
+
+    padding: 0.8rem 1.2rem; /*aumentei o espaçamento da borda para o texto (obs: sempre o primeiro numero mudará a parte de cima e o segundo numero mudará as laterais)*/
+
+    border: none; 
+
+    border-radius: 1.5rem;
+
+    background-color:rgb(50, 60, 66); /* mudei a cor do botão*/
+
+    font-size: 1rem; /*aumentei a fonte*/
+
+    cursor: pointer; /*muda o icone do cursor para a mãozinha quando fica em cima dos botões*/
+
+
+}
+
+section button:hover{
+    background-color: gold;
+    box-shadow: 0 4px 8px rgb(red, green, blue);
+
+}
+
+/*estilizando o rodapé*/
+footer{
+
+    color: rgb(0, 0, 0);/*mudei a cor da fonde do rodapé*/
+
+    background-color: rgb(65, 64, 64); /*mudei a cor do fundo do rodapé*/
+
+    text-align: center; /*alinhou o texto ao centro*/
+
+    width: 100%;/*colocou para preencher toda a largura do rodapé da pagina */
+
+    position: absolute; /*posiciona o rodapé no local certo*/
+
+    padding:0%; /*espaçamento interno*/
+
+    bottom: -10rem; /*alinhou o rodapé no fundo da pagina*/
+
+    font-size: 1rem; /*tamanho da fonte mudada*/
+
+}
+
+/*puxei classse dentro da section  "resultados-pesquisa"*/
+.resultados-pesquisa{
+    width: 60rem;
+
+    height: 46vh; /*altura máxima da caixa de resultados*/
+
+    overflow-y: auto; /*adiciona barra de rolagem vertical se necessário*/
+
+    margin-top: 1rem; /*espaçamento acima da caixa de resultado*/
+
+    padding: 1rem;
+
+    border-radius: 0.6rem;
+}
+
+.item-resultado{
+background-color: rgb(119, 157, 180);
+border-radius: 0.6rem;
+padding: 1rem;
+margin-bottom: 1rem;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Estiliza os títulos dentro dos itens de resultado */
+.item-resultado h2 {
+    font-size: 1.5rem; /* Tamanho da fonte */
+    color: #222831; /* Cor do texto */
+}
+
+/* Estiliza os links dentro dos itens de resultado */
+.item-resultado a {
+    text-decoration: none; /* Remove o sublinhado padrão dos links */
+    color: #30475E; /* Cor do texto dos links */
+}
+
+/* Estiliza os links quando são passados o mouse sobre */
+.item-resultado a:hover {
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+}
+
+/* Estiliza a descrição meta dentro dos itens de resultado */
+.descricao-meta {
+    color: #45474B; /* Cor do texto */
+    margin: 0.5rem 0; /* Margem acima e abaixo */
+}
